@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555D
+D NE555DG4, Timer, 4.5 To 16V, 8-Pin SOIC-8
+K
+F Http:  //www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP bmp280
+D Digital Pressure Sensor
+K
+F https://ae-bst.resource.bosch.com/media/products/dokumente/bmp280/BST-BMP280-DS001-11.pdf
+$ENDCMP
+#
+$CMP ADXL345
+D 3-Axis Accelerometer IC
+K
+F http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf
+$ENDCMP
+#
+#End Doc Library

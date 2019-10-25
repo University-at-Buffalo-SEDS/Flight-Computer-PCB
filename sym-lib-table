@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name Teensy)(type Legacy)(uri ${KIPRJMOD}/lib/Teensy.lib)(options "")(descr ""))
+  (lib (name RF_OEM_Parts)(type Legacy)(uri ${KIPRJMOD}/lib/RF_OEM_Parts.lib)(options "")(descr ""))
+  (lib (name SamacSys_Parts)(type Legacy)(uri ${KIPRJMOD}/lib/SamacSys_Parts.lib)(options "")(descr ""))
+  (lib (name Flight-Computer)(type Legacy)(uri ${KIPRJMOD}/lib/Flight-Computer.lib)(options "")(descr ""))
+)

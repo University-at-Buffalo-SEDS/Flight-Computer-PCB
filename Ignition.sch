@@ -1,0 +1,197 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_PMOS_GDS Q1
+U 1 1 5AB18466
+P 5500 3850
+F 0 "Q1" H 5700 3900 50  0000 L CNN
+F 1 "Q_PMOS" H 5700 3800 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5700 3950 50  0001 C CNN
+F 3 "" H 5500 3850 50  0001 C CNN
+	1    5500 3850
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5AB1848C
+P 5300 3700
+F 0 "R3" V 5380 3700 50  0000 C CNN
+F 1 "10k" V 5300 3700 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5230 3700 50  0001 C CNN
+F 3 "" H 5300 3700 50  0001 C CNN
+	1    5300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PMOS_GDS Q2
+U 1 1 5AB184BD
+P 5500 5050
+F 0 "Q2" H 5700 5100 50  0000 L CNN
+F 1 "Q_PMOS" H 5700 5000 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5700 5150 50  0001 C CNN
+F 3 "" H 5500 5050 50  0001 C CNN
+	1    5500 5050
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5AB184C4
+P 5300 4900
+F 0 "R4" V 5380 4900 50  0000 C CNN
+F 1 "10k" V 5300 4900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5230 4900 50  0001 C CNN
+F 3 "" H 5300 4900 50  0001 C CNN
+	1    5300 4900
+	1    0    0    -1  
+$EndComp
+Text HLabel 4750 4050 0    60   Input ~ 0
+DROGUE
+Text HLabel 4750 5250 0    60   Input ~ 0
+MAIN
+Wire Wire Line
+	5800 4050 5600 4050
+Wire Wire Line
+	5150 5050 5300 5050
+Wire Wire Line
+	5800 5250 5600 5250
+Wire Wire Line
+	5600 3550 5600 3650
+Wire Wire Line
+	5150 3850 5300 3850
+$Comp
+L Device:Q_NMOS_SGD Q3
+U 1 1 5ADFE48C
+P 5050 4050
+F 0 "Q3" H 5250 4100 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 5250 4000 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5250 4150 50  0001 C CNN
+F 3 "" H 5050 4050 50  0001 C CNN
+	1    5050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_SGD Q4
+U 1 1 5ADFE550
+P 5050 5250
+F 0 "Q4" H 5250 5300 50  0000 L CNN
+F 1 "Q_NMOS_SGD" H 5250 5200 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5250 5350 50  0001 C CNN
+F 3 "" H 5050 5250 50  0001 C CNN
+	1    5050 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5ADFE6A2
+P 4850 5400
+F 0 "R2" V 4930 5400 50  0000 C CNN
+F 1 "10k" V 4850 5400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4780 5400 50  0001 C CNN
+F 3 "" H 4850 5400 50  0001 C CNN
+	1    4850 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5ADFE6E7
+P 4850 4200
+F 0 "R1" V 4930 4200 50  0000 C CNN
+F 1 "10k" V 4850 4200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4780 4200 50  0001 C CNN
+F 3 "" H 4850 4200 50  0001 C CNN
+	1    4850 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4350 5150 4350
+Wire Wire Line
+	5150 4350 5150 4250
+Wire Wire Line
+	4850 5550 5150 5550
+Wire Wire Line
+	5150 5550 5150 5450
+$Comp
+L power:GND #PWR?
+U 1 1 5ADFE76B
+P 5150 4350
+F 0 "#PWR?" H 5150 4100 50  0001 C CNN
+F 1 "GND" H 5150 4200 50  0000 C CNN
+F 2 "" H 5150 4350 50  0001 C CNN
+F 3 "" H 5150 4350 50  0001 C CNN
+	1    5150 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ADFE79A
+P 5150 5550
+F 0 "#PWR?" H 5150 5300 50  0001 C CNN
+F 1 "GND" H 5150 5400 50  0000 C CNN
+F 2 "" H 5150 5550 50  0001 C CNN
+F 3 "" H 5150 5550 50  0001 C CNN
+	1    5150 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 4750 5600 4850
+Wire Wire Line
+	4750 4050 4850 4050
+Wire Wire Line
+	4750 5250 4850 5250
+Text HLabel 5800 4050 2    60   Output ~ 0
+DROGUE_POW
+Connection ~ 5300 4750
+Connection ~ 5300 3550
+Text HLabel 5800 5250 2    60   Output ~ 0
+MAIN_POW
+Wire Wire Line
+	5300 4750 5600 4750
+Wire Wire Line
+	5300 3550 5600 3550
+$Comp
+L power:+BATT #PWR?
+U 1 1 5C0747DE
+P 4050 3100
+F 0 "#PWR?" H 4050 2950 50  0001 C CNN
+F 1 "+BATT" H 4065 3273 50  0000 C CNN
+F 2 "" H 4050 3100 50  0001 C CNN
+F 3 "" H 4050 3100 50  0001 C CNN
+	1    4050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5C0748A3
+P 4050 3350
+F 0 "R12" H 4120 3396 50  0000 L CNN
+F 1 "10" H 4120 3305 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 3980 3350 50  0001 C CNN
+F 3 "~" H 4050 3350 50  0001 C CNN
+	1    4050 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3100 4050 3200
+Wire Wire Line
+	4050 3550 4050 3500
+Wire Wire Line
+	4050 3550 5300 3550
+Wire Wire Line
+	4050 4750 4050 3550
+Wire Wire Line
+	4050 4750 5300 4750
+Connection ~ 4050 3550
+$EndSCHEMATC

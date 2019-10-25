@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Flight-Computer)(type KiCad)(uri "$(KIPRJMOD)/lib/Flight-Computer.pretty")(options "")(descr ""))
+  (lib (name Teensy)(type KiCad)(uri "$(KIPRJMOD)/lib/Teensy.pretty")(options "")(descr ""))
+)
