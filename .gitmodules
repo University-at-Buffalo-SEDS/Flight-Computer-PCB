@@ -1,0 +1,3 @@
+[submodule "lib/kicad-footprints"]
+	path = lib/kicad-footprints
+	url = ../../KiCad/kicad-footprints
