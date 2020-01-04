@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -35,9 +35,9 @@ F 3 "" H 4500 3200 50  0001 C CNN
 	1    4500 3200
 	1    0    0    -1  
 $EndComp
-Text HLabel 4300 2200 0    60   Input ~ 0
+Text HLabel 3900 2200 0    60   Input ~ 0
 ACT1
-Text HLabel 4300 3450 0    60   Input ~ 0
+Text HLabel 3900 3450 0    60   Input ~ 0
 ACT2
 Text HLabel 5050 2550 2    60   Output ~ 0
 DROGUE_POW
@@ -96,8 +96,6 @@ Wire Wire Line
 	4500 2100 4500 2200
 Wire Wire Line
 	4500 2200 4650 2200
-Wire Wire Line
-	4300 2200 4500 2200
 Connection ~ 4500 2200
 Wire Wire Line
 	5050 2550 4950 2550
@@ -127,8 +125,6 @@ Wire Wire Line
 	4650 3450 4500 3450
 Wire Wire Line
 	4500 3450 4500 3350
-Wire Wire Line
-	4300 3450 4500 3450
 Connection ~ 4500 3450
 Wire Wire Line
 	4950 3650 4950 3800
@@ -145,25 +141,10 @@ F 3 "" H 4500 4400 50  0001 C CNN
 	1    4500 4400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R13
-U 1 1 5E76AC77
-P 4500 5650
-F 0 "R13" V 4580 5650 50  0000 C CNN
-F 1 "10k" V 4500 5650 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4430 5650 50  0001 C CNN
-F 3 "" H 4500 5650 50  0001 C CNN
-	1    4500 5650
-	1    0    0    -1  
-$EndComp
-Text HLabel 4300 4650 0    60   Input ~ 0
+Text HLabel 3900 4650 0    60   Input ~ 0
 ACT3
-Text HLabel 4300 5900 0    60   Input ~ 0
-ACT4
 Text HLabel 5050 5000 2    60   Output ~ 0
 AUX1_POW
-Text HLabel 5050 6250 2    60   Output ~ 0
-AUX2_POW
 Wire Wire Line
 	3400 4200 4500 4200
 $Comp
@@ -188,48 +169,57 @@ Wire Wire Line
 	4500 4550 4500 4650
 Wire Wire Line
 	4500 4650 4650 4650
-Wire Wire Line
-	4300 4650 4500 4650
 Connection ~ 4500 4650
 Wire Wire Line
 	5050 5000 4950 5000
 Wire Wire Line
 	4950 5000 4950 4850
 Wire Wire Line
-	3400 5400 4500 5400
-$Comp
-L Device:Q_PMOS_GDS Q4
-U 1 1 5E76AC93
-P 4850 5900
-F 0 "Q4" H 5056 5946 50  0000 L CNN
-F 1 "Q_PMOS_GDS" H 5056 5855 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5050 6000 50  0001 C CNN
-F 3 "~" H 4850 5900 50  0001 C CNN
-	1    4850 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 5500 4500 5400
-Connection ~ 4500 5400
-Wire Wire Line
-	4500 5400 4950 5400
-Wire Wire Line
-	4950 5400 4950 5700
-Wire Wire Line
-	4650 5900 4500 5900
-Wire Wire Line
-	4500 5900 4500 5800
-Wire Wire Line
-	4300 5900 4500 5900
-Connection ~ 4500 5900
-Wire Wire Line
-	4950 6100 4950 6250
-Wire Wire Line
-	4950 6250 5050 6250
-Wire Wire Line
 	3400 4200 3400 2950
 Connection ~ 3400 2950
+$Comp
+L Device:R R15
+U 1 1 5ECB6DD4
+P 4100 3450
+F 0 "R15" V 4180 3450 50  0000 C CNN
+F 1 "5.1k" V 4100 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4030 3450 50  0001 C CNN
+F 3 "" H 4100 3450 50  0001 C CNN
+	1    4100 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5ECB7ADD
+P 4100 2200
+F 0 "R14" V 4180 2200 50  0000 C CNN
+F 1 "5.1k" V 4100 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4030 2200 50  0001 C CNN
+F 3 "" H 4100 2200 50  0001 C CNN
+	1    4100 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5ECBD3A1
+P 4100 4650
+F 0 "R16" V 4180 4650 50  0000 C CNN
+F 1 "5.1k" V 4100 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4030 4650 50  0001 C CNN
+F 3 "" H 4100 4650 50  0001 C CNN
+	1    4100 4650
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	3400 5400 3400 4200
-Connection ~ 3400 4200
+	3900 4650 3950 4650
+Wire Wire Line
+	4250 4650 4500 4650
+Wire Wire Line
+	3900 3450 3950 3450
+Wire Wire Line
+	4250 3450 4500 3450
+Wire Wire Line
+	3900 2200 3950 2200
+Wire Wire Line
+	4250 2200 4500 2200
 $EndSCHEMATC

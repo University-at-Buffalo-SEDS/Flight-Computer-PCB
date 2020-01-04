@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Flight-Computer:UB-SEDS-Logo G2
-U 1 1 5CB119A1
-P 9850 7100
-F 0 "G2" H 9850 6963 60  0001 C CNN
-F 1 "LOGO" H 9850 7237 60  0001 C CNN
-F 2 "Flight-Computer:UB-SEDS-Logo" H 9850 7100 60  0001 C CNN
-F 3 "" H 9850 7100 60  0001 C CNN
-	1    9850 7100
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCU_ST_STM32F3:STM32F303RETx U6
 U 1 1 5DF0B287
 P 5700 4050

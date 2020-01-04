@@ -762,9 +762,7 @@ F3 "ACT2" I L 3950 3150 60
 F4 "DROGUE_POW" O R 5250 3050 60 
 F5 "MAIN_POW" O R 5250 3150 60 
 F6 "ACT3" I L 3950 3250 60 
-F7 "ACT4" I L 3950 3350 60 
-F8 "AUX1_POW" O R 5250 3250 60 
-F9 "AUX2_POW" O R 5250 3350 60 
+F7 "AUX1_POW" O R 5250 3250 60 
 $EndSheet
 $Comp
 L power:+BATT #PWR011
@@ -781,20 +779,12 @@ Wire Wire Line
 	3400 2800 3400 2900
 Wire Wire Line
 	5250 3250 5900 3250
-Wire Wire Line
-	5250 3350 5900 3350
 Text Label 5300 3250 0    60   ~ 0
 AUX1_POW
-Text Label 5300 3350 0    60   ~ 0
-AUX2_POW
 Wire Wire Line
 	3400 3250 3950 3250
-Wire Wire Line
-	3400 3350 3950 3350
 Text Label 3450 3250 0    60   ~ 0
 ACT3
-Text Label 3450 3350 0    60   ~ 0
-ACT4
 Text Label 8650 3400 0    60   ~ 0
 MAIN_POW
 Text Label 8650 3200 0    60   ~ 0
@@ -1000,9 +990,6 @@ Entry Wire Line
 Entry Wire Line
 	3300 3350 3400 3250
 Entry Wire Line
-	3300 3450 3400 3350
-NoConn ~ 5900 3350
-Entry Wire Line
 	1350 2300 1450 2200
 Entry Wire Line
 	1350 3050 1450 2950
@@ -1087,8 +1074,6 @@ Entry Wire Line
 Entry Wire Line
 	4750 6200 4850 6300
 Entry Wire Line
-	4750 6300 4850 6400
-Entry Wire Line
 	4750 6500 4850 6600
 Entry Wire Line
 	4750 6600 4850 6700
@@ -1154,6 +1139,7 @@ Wire Wire Line
 	2750 4100 2750 4400
 Wire Wire Line
 	4650 4100 4650 4400
+NoConn ~ 4750 6300
 Wire Bus Line
 	7400 5650 7400 6350
 Wire Bus Line
@@ -1163,13 +1149,13 @@ Wire Bus Line
 Wire Bus Line
 	6500 2650 6500 3350
 Wire Bus Line
-	4850 7100 4850 7800
-Wire Bus Line
-	4850 6600 4850 7000
+	3300 3150 3300 3700
 Wire Bus Line
 	4850 6100 4850 6500
 Wire Bus Line
-	3300 3150 3300 3700
+	4850 7100 4850 7800
+Wire Bus Line
+	4850 6600 4850 7000
 Wire Bus Line
 	1450 6800 1450 7300
 Wire Bus Line
