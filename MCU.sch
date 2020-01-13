@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Flight Computer-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500

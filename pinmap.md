@@ -1,4 +1,4 @@
-STM32F303RE Pin Mapping:
+# STM32F303RE Pin Mapping:
 
 PA0/14:  ADC1
 PA1/15:  ADC2
@@ -31,3 +31,4 @@ PC0/8:   ACT1
 PC1/9:   ACT2
 PC2/10:  ACT3
 PC3/11:  ACT4
+
