@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Flight Computer-cache
 EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
@@ -1070,8 +1069,8 @@ L Sensor_Motion:ADXL343 U5
 U 1 1 5EA124E2
 P 5200 1500
 F 0 "U5" H 5744 1546 50  0000 L CNN
-F 1 "ADXL343" H 5744 1455 50  0000 L CNN
-F 2 "Package_LGA:LGA-14_3x5mm_P0.8mm_LayoutBorder1x6y" H 5200 1500 50  0001 C CNN
+F 1 "ADXL345" H 5744 1455 50  0000 L CNN
+F 2 "SamacSys_Parts:CC-14-1" H 5200 1500 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL343.pdf" H 5200 1500 50  0001 C CNN
 	1    5200 1500
 	1    0    0    -1  
