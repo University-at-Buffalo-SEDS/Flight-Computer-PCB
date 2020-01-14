@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_ST_STM32F3:STM32F303RETx U6
-U 1 1 5DF0B287
-P 6550 3750
-F 0 "U6" H 6550 1861 50  0000 C CNN
-F 1 "STM32F303RETx" H 6550 1770 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5950 2050 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00118585.pdf" H 6550 3750 50  0001 C CNN
-	1    6550 3750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR035
 U 1 1 5DF125E2
 P 6850 1250
@@ -114,62 +103,43 @@ Connection ~ 6350 1400
 Wire Wire Line
 	6350 1400 6850 1400
 Wire Wire Line
-	7250 2650 7850 2650
-Wire Wire Line
-	7250 2750 7850 2750
-Wire Wire Line
-	7250 2850 7850 2850
+	7250 2650 8700 2650
 Wire Wire Line
 	7250 4150 7300 4150
 Wire Wire Line
 	7250 4250 7300 4250
 Wire Wire Line
-	7250 4450 7850 4450
+	7250 4450 8550 4450
 Wire Wire Line
-	7250 4550 7850 4550
+	7250 4550 8450 4550
 Wire Wire Line
-	7250 2950 7850 2950
+	7250 3150 9050 3150
 Wire Wire Line
-	7250 3050 7850 3050
-Wire Wire Line
-	7250 3150 7850 3150
-Wire Wire Line
-	7250 3250 7850 3250
+	7250 3250 9050 3250
 $Comp
 L Diode:BAT54S D2
 U 1 1 5E142556
-P 8450 1600
-F 0 "D2" V 8404 1688 50  0000 L CNN
-F 1 "BAT54S" V 8495 1688 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8525 1725 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 8330 1600 50  0001 C CNN
-	1    8450 1600
+P 7750 1600
+F 0 "D2" V 7704 1688 50  0000 L CNN
+F 1 "BAT54S" V 7795 1688 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7825 1725 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 7630 1600 50  0001 C CNN
+	1    7750 1600
 	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR036
-U 1 1 5E211E72
-P 7650 1450
-F 0 "#PWR036" H 7650 1300 50  0001 C CNN
-F 1 "+3V3" H 7650 1590 50  0000 C CNN
-F 2 "" H 7650 1450 50  0001 C CNN
-F 3 "" H 7650 1450 50  0001 C CNN
-	1    7650 1450
-	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:BAT54S D1
 U 1 1 5E211E6A
-P 8050 1900
-F 0 "D1" V 8004 1988 50  0000 L CNN
-F 1 "BAT54S" V 8095 1988 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8125 2025 50  0001 L CNN
-F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 7930 1900 50  0001 C CNN
-	1    8050 1900
+P 7350 1900
+F 0 "D1" V 7304 1988 50  0000 L CNN
+F 1 "BAT54S" V 7395 1988 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7425 2025 50  0001 L CNN
+F 3 "https://www.diodes.com/assets/Datasheets/ds11005.pdf" H 7230 1900 50  0001 C CNN
+	1    7350 1900
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6850 1400 6850 1800
+	6850 1400 6850 1600
 Wire Wire Line
 	6850 1250 6850 1400
 $Comp
@@ -302,30 +272,19 @@ Wire Wire Line
 	2800 1400 3100 1400
 Connection ~ 3100 1400
 Wire Wire Line
-	8050 2150 8050 2100
+	7350 2150 7350 2100
 Wire Wire Line
-	7250 2150 8050 2150
-Wire Wire Line
-	7650 1900 7750 1900
-Wire Wire Line
-	8150 1600 7650 1600
-Connection ~ 7650 1600
-Wire Wire Line
-	7650 1600 7650 1900
+	7250 2150 7350 2150
 Wire Wire Line
 	7250 5350 7850 5350
 Wire Wire Line
-	7250 5250 7850 5250
+	7250 5250 7750 5250
 Wire Wire Line
-	7250 5150 7850 5150
+	7250 5150 7650 5150
 Wire Wire Line
-	7250 5050 7850 5050
+	7250 5050 7550 5050
 Wire Wire Line
-	7250 4950 7850 4950
-Wire Wire Line
-	7250 4650 7850 4650
-Wire Wire Line
-	7250 4750 7850 4750
+	7250 4950 7450 4950
 Wire Wire Line
 	2800 1400 2200 1400
 Connection ~ 2800 1400
@@ -370,7 +329,7 @@ Wire Wire Line
 	7300 4350 7850 4350
 Connection ~ 7300 4250
 Wire Wire Line
-	7300 4250 7850 4250
+	7300 4250 8650 4250
 Text Label 7350 4350 0    60   ~ 0
 JTRST
 Wire Wire Line
@@ -387,7 +346,7 @@ Wire Wire Line
 	7300 4150 7300 4050
 Connection ~ 7300 4150
 Wire Wire Line
-	7300 4150 7850 4150
+	7300 4150 8750 4150
 Wire Wire Line
 	7300 4050 7850 4050
 Text Label 7350 4050 0    60   ~ 0
@@ -421,54 +380,50 @@ Text HLabel 5250 4050 0    60   BiDi ~ 0
 ACT3
 Text HLabel 5250 4150 0    60   BiDi ~ 0
 ACT4
-Text HLabel 7850 4150 2    60   BiDi ~ 0
+Text HLabel 8850 4150 2    60   BiDi ~ 0
 USART2_TX
-Text HLabel 7850 4250 2    60   BiDi ~ 0
+Text HLabel 8850 4250 2    60   BiDi ~ 0
 USART2_RX
-Text HLabel 7850 4450 2    60   BiDi ~ 0
+Text HLabel 8850 4450 2    60   BiDi ~ 0
 USART1_TX
-Text HLabel 7850 4550 2    60   BiDi ~ 0
+Text HLabel 8850 4550 2    60   BiDi ~ 0
 USART1_RX
-Text HLabel 7850 4650 2    60   BiDi ~ 0
-I2C1_SDA
-Text HLabel 7850 4750 2    60   BiDi ~ 0
-I2C1_SCL
-Text HLabel 7850 4950 2    60   BiDi ~ 0
+Text HLabel 7950 4950 2    60   BiDi ~ 0
 SPI2_CS1
-Text HLabel 7850 5050 2    60   BiDi ~ 0
+Text HLabel 7950 5050 2    60   BiDi ~ 0
 SPI2_CS2
-Text HLabel 7850 5150 2    60   BiDi ~ 0
+Text HLabel 7950 5150 2    60   BiDi ~ 0
 SPI2_SCK
-Text HLabel 7850 5250 2    60   BiDi ~ 0
+Text HLabel 7950 5250 2    60   BiDi ~ 0
 SPI2_MISO
-Text HLabel 7850 5350 2    60   BiDi ~ 0
+Text HLabel 7950 5350 2    60   BiDi ~ 0
 SPI2_MOSI
 Wire Wire Line
-	8050 2150 8600 2150
-Connection ~ 8050 2150
+	7350 2150 7850 2150
+Connection ~ 7350 2150
 Wire Wire Line
-	8450 2250 8600 2250
-Connection ~ 8450 2250
+	7750 2250 7850 2250
+Connection ~ 7750 2250
 Wire Wire Line
-	7250 2250 8450 2250
+	7250 2250 7750 2250
 NoConn ~ 7250 2550
-Text HLabel 7850 2650 2    60   BiDi ~ 0
+Text HLabel 9050 2650 2    60   BiDi ~ 0
 SPI1_SCK
-Text HLabel 7850 2750 2    60   BiDi ~ 0
+Text HLabel 9050 2750 2    60   BiDi ~ 0
 SPI1_MISO
-Text HLabel 7850 2850 2    60   BiDi ~ 0
+Text HLabel 9050 2850 2    60   BiDi ~ 0
 SPI1_MOSI
-Text HLabel 7850 2950 2    60   BiDi ~ 0
+Text HLabel 9050 2950 2    60   BiDi ~ 0
 SPI1_CS1
-Text HLabel 7850 3050 2    60   BiDi ~ 0
+Text HLabel 9050 3050 2    60   BiDi ~ 0
 SPI1_CS2
-Text HLabel 7850 3150 2    60   BiDi ~ 0
+Text HLabel 9050 3150 2    60   BiDi ~ 0
 SPI1_CS3
-Text HLabel 7850 3250 2    60   BiDi ~ 0
+Text HLabel 9050 3250 2    60   BiDi ~ 0
 SPI1_CS4
-Text HLabel 8600 2150 2    60   BiDi ~ 0
+Text HLabel 7850 2150 2    60   BiDi ~ 0
 ADC1
-Text HLabel 8600 2250 2    60   BiDi ~ 0
+Text HLabel 7850 2250 2    60   BiDi ~ 0
 ADC2
 $Comp
 L Oscillator:MAX7375AXR805 U7
@@ -811,29 +766,352 @@ USART3_TX
 Text Label 5300 4950 0    60   ~ 0
 USART3_RX
 Wire Wire Line
-	7650 1450 7650 1600
+	7750 1800 7750 2250
+Connection ~ 8250 1900
 Wire Wire Line
-	8450 1800 8450 2250
-Connection ~ 9100 1900
+	8250 1600 8250 1900
 Wire Wire Line
-	9100 1600 9100 1900
-Wire Wire Line
-	9100 1900 9100 1950
+	8250 1900 8250 1950
 $Comp
 L power:GND #PWR037
 U 1 1 5E211E73
-P 9100 1950
-F 0 "#PWR037" H 9100 1700 50  0001 C CNN
-F 1 "GND" H 9100 1800 50  0000 C CNN
-F 2 "" H 9100 1950 50  0001 C CNN
-F 3 "" H 9100 1950 50  0001 C CNN
-	1    9100 1950
+P 8250 1950
+F 0 "#PWR037" H 8250 1700 50  0001 C CNN
+F 1 "GND" H 8250 1800 50  0000 C CNN
+F 2 "" H 8250 1950 50  0001 C CNN
+F 3 "" H 8250 1950 50  0001 C CNN
+	1    8250 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 1600 9100 1600
+	8050 1600 8250 1600
 Wire Wire Line
-	8350 1900 9100 1900
+	7650 1900 8250 1900
 NoConn ~ 7250 2450
 NoConn ~ 7250 2350
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E2FA2C3
+P 8450 3450
+AR Path="/5E2FA2C3" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E2FA2C3" Ref="TP?"  Part="1" 
+F 0 "TP?" H 8508 3568 50  0000 L CNN
+F 1 "USART1_RX" H 8508 3477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8650 3450 50  0001 C CNN
+F 3 "~" H 8650 3450 50  0001 C CNN
+	1    8450 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E2FA2C9
+P 8550 3650
+AR Path="/5E2FA2C9" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E2FA2C9" Ref="TP?"  Part="1" 
+F 0 "TP?" H 8608 3768 50  0000 L CNN
+F 1 "USART1_TX" H 8608 3677 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8750 3650 50  0001 C CNN
+F 3 "~" H 8750 3650 50  0001 C CNN
+	1    8550 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E2FA2CF
+P 8650 3850
+AR Path="/5E2FA2CF" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E2FA2CF" Ref="TP?"  Part="1" 
+F 0 "TP?" H 8708 3968 50  0000 L CNN
+F 1 "USART2_RX" H 8708 3877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8850 3850 50  0001 C CNN
+F 3 "~" H 8850 3850 50  0001 C CNN
+	1    8650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E2FA2D5
+P 8750 4050
+AR Path="/5E2FA2D5" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E2FA2D5" Ref="TP?"  Part="1" 
+F 0 "TP?" H 8808 4168 50  0000 L CNN
+F 1 "USART2_TX" H 8808 4077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8950 4050 50  0001 C CNN
+F 3 "~" H 8950 4050 50  0001 C CNN
+	1    8750 4050
+	1    0    0    -1  
+$EndComp
+Text Label 7300 4650 0    60   ~ 0
+I2C1_SDA
+Text Label 7300 4750 0    60   ~ 0
+I2C1_SCL
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E337297
+P 8850 4750
+AR Path="/5E337297" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E337297" Ref="TP?"  Part="1" 
+F 0 "TP?" V 8804 4938 50  0000 L CNN
+F 1 "I2C1_SDA" V 8895 4938 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9050 4750 50  0001 C CNN
+F 3 "~" H 9050 4750 50  0001 C CNN
+	1    8850 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E35B1AD
+P 8850 4950
+AR Path="/5E35B1AD" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E35B1AD" Ref="TP?"  Part="1" 
+F 0 "TP?" V 8804 5138 50  0000 L CNN
+F 1 "I2C1_SCL" V 8895 5138 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9050 4950 50  0001 C CNN
+F 3 "~" H 9050 4950 50  0001 C CNN
+	1    8850 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 4950 8650 4950
+Wire Wire Line
+	8650 4950 8650 4750
+Wire Wire Line
+	7250 4750 8650 4750
+Wire Wire Line
+	8450 3450 8450 4550
+Connection ~ 8450 4550
+Wire Wire Line
+	8450 4550 8850 4550
+Wire Wire Line
+	8550 3650 8550 4450
+Connection ~ 8550 4450
+Wire Wire Line
+	8550 4450 8850 4450
+Wire Wire Line
+	8650 3850 8650 4250
+Connection ~ 8650 4250
+Wire Wire Line
+	8650 4250 8850 4250
+Wire Wire Line
+	8750 4050 8750 4150
+Connection ~ 8750 4150
+Wire Wire Line
+	8750 4150 8850 4150
+Wire Wire Line
+	8850 4750 8750 4750
+Wire Wire Line
+	8750 4750 8750 4650
+Wire Wire Line
+	8750 4650 7250 4650
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E4262F3
+P 7750 5650
+AR Path="/5E4262F3" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E4262F3" Ref="TP?"  Part="1" 
+F 0 "TP?" H 7692 5676 50  0000 R CNN
+F 1 "SPI2_MISO" H 7692 5767 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7950 5650 50  0001 C CNN
+F 3 "~" H 7950 5650 50  0001 C CNN
+	1    7750 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E42E1EE
+P 7850 5450
+AR Path="/5E42E1EE" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E42E1EE" Ref="TP?"  Part="1" 
+F 0 "TP?" H 7792 5476 50  0000 R CNN
+F 1 "SPI2_MOSI" H 7792 5567 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8050 5450 50  0001 C CNN
+F 3 "~" H 8050 5450 50  0001 C CNN
+	1    7850 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E447729
+P 7650 5850
+AR Path="/5E447729" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E447729" Ref="TP?"  Part="1" 
+F 0 "TP?" H 7592 5876 50  0000 R CNN
+F 1 "SPI2_SCK" H 7592 5967 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7850 5850 50  0001 C CNN
+F 3 "~" H 7850 5850 50  0001 C CNN
+	1    7650 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E44E9E5
+P 7550 6050
+AR Path="/5E44E9E5" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E44E9E5" Ref="TP?"  Part="1" 
+F 0 "TP?" H 7492 6076 50  0000 R CNN
+F 1 "SPI2_CS2" H 7492 6167 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7750 6050 50  0001 C CNN
+F 3 "~" H 7750 6050 50  0001 C CNN
+	1    7550 6050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E455F06
+P 7450 6250
+AR Path="/5E455F06" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E455F06" Ref="TP?"  Part="1" 
+F 0 "TP?" H 7392 6276 50  0000 R CNN
+F 1 "SPI2_CS1" H 7392 6367 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7650 6250 50  0001 C CNN
+F 3 "~" H 7650 6250 50  0001 C CNN
+	1    7450 6250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7850 5450 7850 5350
+Connection ~ 7850 5350
+Wire Wire Line
+	7850 5350 7950 5350
+Wire Wire Line
+	7750 5650 7750 5250
+Connection ~ 7750 5250
+Wire Wire Line
+	7750 5250 7950 5250
+Wire Wire Line
+	7650 5850 7650 5150
+Connection ~ 7650 5150
+Wire Wire Line
+	7650 5150 7950 5150
+Wire Wire Line
+	7550 6050 7550 5050
+Connection ~ 7550 5050
+Wire Wire Line
+	7550 5050 7950 5050
+Wire Wire Line
+	7450 6250 7450 4950
+Connection ~ 7450 4950
+Wire Wire Line
+	7450 4950 7950 4950
+Wire Wire Line
+	7000 1900 7050 1900
+$Comp
+L MCU_ST_STM32F3:STM32F303RETx U6
+U 1 1 5DF0B287
+P 6550 3750
+F 0 "U6" H 6550 1861 50  0000 C CNN
+F 1 "STM32F303RETx" H 6550 1770 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5950 2050 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00118585.pdf" H 6550 3750 50  0001 C CNN
+	1    6550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1900 7000 1600
+Wire Wire Line
+	7000 1600 6850 1600
+Connection ~ 6850 1600
+Wire Wire Line
+	6850 1600 6850 1800
+Wire Wire Line
+	7450 1600 7000 1600
+Connection ~ 7000 1600
+Wire Wire Line
+	7250 3050 8600 3050
+Wire Wire Line
+	7250 2950 8500 2950
+Wire Wire Line
+	7250 2850 8900 2850
+Wire Wire Line
+	7250 2750 8800 2750
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E48A24A
+P 8600 1950
+AR Path="/5E48A24A" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E48A24A" Ref="TP?"  Part="1" 
+F 0 "TP?" H 8658 2068 50  0000 L CNN
+F 1 "SPI1_CS2" H 8658 1977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8800 1950 50  0001 C CNN
+F 3 "~" H 8800 1950 50  0001 C CNN
+	1    8600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E48A244
+P 8700 2150
+AR Path="/5E48A244" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E48A244" Ref="TP?"  Part="1" 
+F 0 "TP?" H 8758 2268 50  0000 L CNN
+F 1 "SPI1_SCK" H 8758 2177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8900 2150 50  0001 C CNN
+F 3 "~" H 8900 2150 50  0001 C CNN
+	1    8700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E48A23E
+P 8900 2550
+AR Path="/5E48A23E" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E48A23E" Ref="TP?"  Part="1" 
+F 0 "TP?" H 8958 2668 50  0000 L CNN
+F 1 "SPI1_MOSI" H 8958 2577 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9100 2550 50  0001 C CNN
+F 3 "~" H 9100 2550 50  0001 C CNN
+	1    8900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E48A238
+P 8800 2350
+AR Path="/5E48A238" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E48A238" Ref="TP?"  Part="1" 
+F 0 "TP?" H 8858 2468 50  0000 L CNN
+F 1 "SPI1_MISO" H 8858 2377 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9000 2350 50  0001 C CNN
+F 3 "~" H 9000 2350 50  0001 C CNN
+	1    8800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E48A250
+P 8500 1750
+AR Path="/5E48A250" Ref="TP?"  Part="1" 
+AR Path="/5E1357AF/5E48A250" Ref="TP?"  Part="1" 
+F 0 "TP?" H 8558 1868 50  0000 L CNN
+F 1 "SPI1_CS1" H 8558 1777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8700 1750 50  0001 C CNN
+F 3 "~" H 8700 1750 50  0001 C CNN
+	1    8500 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2550 8900 2850
+Connection ~ 8900 2850
+Wire Wire Line
+	8900 2850 9050 2850
+Wire Wire Line
+	8800 2350 8800 2750
+Connection ~ 8800 2750
+Wire Wire Line
+	8800 2750 9050 2750
+Wire Wire Line
+	8700 2150 8700 2650
+Connection ~ 8700 2650
+Wire Wire Line
+	8700 2650 9050 2650
+Wire Wire Line
+	8600 1950 8600 3050
+Connection ~ 8600 3050
+Wire Wire Line
+	8600 3050 9050 3050
+Wire Wire Line
+	8500 1750 8500 2950
+Connection ~ 8500 2950
+Wire Wire Line
+	8500 2950 9050 2950
 $EndSCHEMATC
