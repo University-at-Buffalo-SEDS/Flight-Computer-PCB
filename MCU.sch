@@ -106,10 +106,6 @@ Wire Wire Line
 	7250 4150 7300 4150
 Wire Wire Line
 	7250 4250 7300 4250
-Wire Wire Line
-	7250 4450 8400 4450
-Wire Wire Line
-	7250 4550 8300 4550
 $Comp
 L Diode:BAT54S D2
 U 1 1 5E142556
@@ -318,8 +314,6 @@ Wire Wire Line
 Wire Wire Line
 	7300 4350 7850 4350
 Connection ~ 7300 4250
-Wire Wire Line
-	7300 4250 8500 4250
 Text Label 7350 4350 0    60   ~ 0
 JTRST
 Wire Wire Line
@@ -335,8 +329,6 @@ NRST
 Wire Wire Line
 	7300 4150 7300 4050
 Connection ~ 7300 4150
-Wire Wire Line
-	7300 4150 8600 4150
 Wire Wire Line
 	7300 4050 7850 4050
 Text Label 7350 4050 0    60   ~ 0
@@ -771,58 +763,6 @@ Wire Wire Line
 	7650 1900 8250 1900
 NoConn ~ 7250 2450
 NoConn ~ 7250 2350
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E2FA2C3
-P 8300 3450
-AR Path="/5E2FA2C3" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E2FA2C3" Ref="TP17"  Part="1" 
-F 0 "TP17" H 8358 3568 50  0000 L CNN
-F 1 "USART1_RX" H 8358 3477 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8500 3450 50  0001 C CNN
-F 3 "~" H 8500 3450 50  0001 C CNN
-	1    8300 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E2FA2C9
-P 8400 3650
-AR Path="/5E2FA2C9" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E2FA2C9" Ref="TP19"  Part="1" 
-F 0 "TP19" H 8458 3768 50  0000 L CNN
-F 1 "USART1_TX" H 8458 3677 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8600 3650 50  0001 C CNN
-F 3 "~" H 8600 3650 50  0001 C CNN
-	1    8400 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E2FA2CF
-P 8500 3850
-AR Path="/5E2FA2CF" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E2FA2CF" Ref="TP21"  Part="1" 
-F 0 "TP21" H 8558 3968 50  0000 L CNN
-F 1 "USART2_RX" H 8558 3877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8700 3850 50  0001 C CNN
-F 3 "~" H 8700 3850 50  0001 C CNN
-	1    8500 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E2FA2D5
-P 8600 4050
-AR Path="/5E2FA2D5" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E2FA2D5" Ref="TP23"  Part="1" 
-F 0 "TP23" H 8658 4168 50  0000 L CNN
-F 1 "USART2_TX" H 8658 4077 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8800 4050 50  0001 C CNN
-F 3 "~" H 8800 4050 50  0001 C CNN
-	1    8600 4050
-	1    0    0    -1  
-$EndComp
 Text Label 7300 4650 0    60   ~ 0
 I2C1_SDA
 Text Label 7300 4750 0    60   ~ 0
@@ -840,116 +780,6 @@ F 3 "~" H 10050 4650 50  0001 C CNN
 	1    9850 4650
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8300 3450 8300 4550
-Connection ~ 8300 4550
-Wire Wire Line
-	8300 4550 8700 4550
-Wire Wire Line
-	8400 3650 8400 4450
-Connection ~ 8400 4450
-Wire Wire Line
-	8400 4450 8700 4450
-Wire Wire Line
-	8500 3850 8500 4250
-Connection ~ 8500 4250
-Wire Wire Line
-	8500 4250 8700 4250
-Wire Wire Line
-	8600 4050 8600 4150
-Connection ~ 8600 4150
-Wire Wire Line
-	8600 4150 8700 4150
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E4262F3
-P 8650 5650
-AR Path="/5E4262F3" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E4262F3" Ref="TP15"  Part="1" 
-F 0 "TP15" H 8592 5676 50  0000 R CNN
-F 1 "SPI2_MISO" H 8592 5767 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8850 5650 50  0001 C CNN
-F 3 "~" H 8850 5650 50  0001 C CNN
-	1    8650 5650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E42E1EE
-P 8750 5450
-AR Path="/5E42E1EE" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E42E1EE" Ref="TP16"  Part="1" 
-F 0 "TP16" H 8692 5476 50  0000 R CNN
-F 1 "SPI2_MOSI" H 8692 5567 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8950 5450 50  0001 C CNN
-F 3 "~" H 8950 5450 50  0001 C CNN
-	1    8750 5450
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E447729
-P 8550 5850
-AR Path="/5E447729" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E447729" Ref="TP14"  Part="1" 
-F 0 "TP14" H 8492 5876 50  0000 R CNN
-F 1 "SPI2_SCK" H 8492 5967 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8750 5850 50  0001 C CNN
-F 3 "~" H 8750 5850 50  0001 C CNN
-	1    8550 5850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E44E9E5
-P 8450 6050
-AR Path="/5E44E9E5" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E44E9E5" Ref="TP13"  Part="1" 
-F 0 "TP13" H 8392 6076 50  0000 R CNN
-F 1 "SPI2_CS2" H 8392 6167 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8650 6050 50  0001 C CNN
-F 3 "~" H 8650 6050 50  0001 C CNN
-	1    8450 6050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E455F06
-P 8350 6250
-AR Path="/5E455F06" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E455F06" Ref="TP12"  Part="1" 
-F 0 "TP12" H 8292 6276 50  0000 R CNN
-F 1 "SPI2_CS1" H 8292 6367 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8550 6250 50  0001 C CNN
-F 3 "~" H 8550 6250 50  0001 C CNN
-	1    8350 6250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8750 5450 8750 5350
-Connection ~ 8750 5350
-Wire Wire Line
-	8750 5350 8850 5350
-Wire Wire Line
-	8650 5650 8650 5250
-Connection ~ 8650 5250
-Wire Wire Line
-	8650 5250 8850 5250
-Wire Wire Line
-	8550 5850 8550 5150
-Connection ~ 8550 5150
-Wire Wire Line
-	8550 5150 8850 5150
-Wire Wire Line
-	8450 6050 8450 5050
-Connection ~ 8450 5050
-Wire Wire Line
-	8450 5050 8850 5050
-Wire Wire Line
-	8350 6250 8350 4950
-Connection ~ 8350 4950
-Wire Wire Line
-	8350 4950 8850 4950
 Wire Wire Line
 	7000 1900 7050 1900
 $Comp
@@ -973,104 +803,6 @@ Wire Wire Line
 Wire Wire Line
 	7450 1600 7000 1600
 Connection ~ 7000 1600
-Wire Wire Line
-	7250 3050 8600 3050
-Wire Wire Line
-	7250 2950 8500 2950
-Wire Wire Line
-	7250 2850 8900 2850
-Wire Wire Line
-	7250 2750 8800 2750
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E48A24A
-P 8600 1950
-AR Path="/5E48A24A" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E48A24A" Ref="TP20"  Part="1" 
-F 0 "TP20" H 8658 2068 50  0000 L CNN
-F 1 "SPI1_CS2" H 8658 1977 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8800 1950 50  0001 C CNN
-F 3 "~" H 8800 1950 50  0001 C CNN
-	1    8600 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E48A244
-P 8700 2150
-AR Path="/5E48A244" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E48A244" Ref="TP22"  Part="1" 
-F 0 "TP22" H 8758 2268 50  0000 L CNN
-F 1 "SPI1_SCK" H 8758 2177 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8900 2150 50  0001 C CNN
-F 3 "~" H 8900 2150 50  0001 C CNN
-	1    8700 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E48A23E
-P 8900 2550
-AR Path="/5E48A23E" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E48A23E" Ref="TP27"  Part="1" 
-F 0 "TP27" H 8958 2668 50  0000 L CNN
-F 1 "SPI1_MOSI" H 8958 2577 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9100 2550 50  0001 C CNN
-F 3 "~" H 9100 2550 50  0001 C CNN
-	1    8900 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E48A238
-P 8800 2350
-AR Path="/5E48A238" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E48A238" Ref="TP24"  Part="1" 
-F 0 "TP24" H 8858 2468 50  0000 L CNN
-F 1 "SPI1_MISO" H 8858 2377 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9000 2350 50  0001 C CNN
-F 3 "~" H 9000 2350 50  0001 C CNN
-	1    8800 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5E48A250
-P 8500 1750
-AR Path="/5E48A250" Ref="TP?"  Part="1" 
-AR Path="/5E1357AF/5E48A250" Ref="TP18"  Part="1" 
-F 0 "TP18" H 8558 1868 50  0000 L CNN
-F 1 "SPI1_CS1" H 8558 1777 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8700 1750 50  0001 C CNN
-F 3 "~" H 8700 1750 50  0001 C CNN
-	1    8500 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 2550 8900 2850
-Connection ~ 8900 2850
-Wire Wire Line
-	8900 2850 9050 2850
-Wire Wire Line
-	8800 2350 8800 2750
-Connection ~ 8800 2750
-Wire Wire Line
-	8800 2750 9050 2750
-Wire Wire Line
-	8700 2150 8700 2650
-Connection ~ 8700 2650
-Wire Wire Line
-	8700 2650 9050 2650
-Wire Wire Line
-	8600 1950 8600 3050
-Connection ~ 8600 3050
-Wire Wire Line
-	8600 3050 9050 3050
-Wire Wire Line
-	8500 1750 8500 2950
-Connection ~ 8500 2950
-Wire Wire Line
-	8500 2950 9050 2950
 Text Label 3150 6850 0    60   ~ 0
 OSC_IN
 Wire Wire Line
@@ -1179,8 +911,6 @@ F 3 "" H 5600 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 3350 5850 3350
-Wire Wire Line
-	7250 2650 8700 2650
 $Comp
 L Device:R R21
 U 1 1 5E254A36
@@ -1257,16 +987,6 @@ F 3 "" H 7500 5350 50  0001 C CNN
 	1    7500 5350
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7650 4950 8350 4950
-Wire Wire Line
-	8000 5050 8450 5050
-Wire Wire Line
-	7650 5150 8550 5150
-Wire Wire Line
-	8000 5250 8650 5250
-Wire Wire Line
-	7650 5350 8750 5350
 $Comp
 L Device:R R26
 U 1 1 5E51C273
@@ -1322,4 +1042,32 @@ Wire Wire Line
 NoConn ~ 5850 4150
 NoConn ~ 7250 3250
 NoConn ~ 7250 3150
+Wire Wire Line
+	7250 4550 8700 4550
+Wire Wire Line
+	7250 4450 8700 4450
+Wire Wire Line
+	7300 4250 8700 4250
+Wire Wire Line
+	7300 4150 8700 4150
+Wire Wire Line
+	8000 5250 8850 5250
+Wire Wire Line
+	7650 5150 8850 5150
+Wire Wire Line
+	8000 5050 8850 5050
+Wire Wire Line
+	7650 4950 8850 4950
+Wire Wire Line
+	7650 5350 8850 5350
+Wire Wire Line
+	7250 2850 9050 2850
+Wire Wire Line
+	7250 2750 9050 2750
+Wire Wire Line
+	7250 2650 9050 2650
+Wire Wire Line
+	7250 3050 9050 3050
+Wire Wire Line
+	7250 2950 9050 2950
 $EndSCHEMATC
