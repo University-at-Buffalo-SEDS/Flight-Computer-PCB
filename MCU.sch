@@ -102,10 +102,6 @@ Wire Wire Line
 Connection ~ 6350 1400
 Wire Wire Line
 	6350 1400 6850 1400
-Wire Wire Line
-	7250 4150 7300 4150
-Wire Wire Line
-	7250 4250 7300 4250
 $Comp
 L Diode:BAT54S D2
 U 1 1 5E142556
@@ -306,35 +302,31 @@ Wire Wire Line
 Text Label 7300 3450 0    60   ~ 0
 SWDIO_JTMS
 Text Label 7300 3550 0    60   ~ 0
-SWDIO_JTCK
+SWCLK_JTCK
 Text Label 7300 3650 0    60   ~ 0
 JTDI
 Wire Wire Line
-	7300 4250 7300 4350
+	8100 4250 8100 4350
 Wire Wire Line
-	7300 4350 7850 4350
-Connection ~ 7300 4250
-Text Label 7350 4350 0    60   ~ 0
+	8100 4350 8650 4350
+Text Label 8150 4350 0    60   ~ 0
 JTRST
 Wire Wire Line
-	2100 3200 2800 3200
+	2100 3100 2800 3100
 Wire Wire Line
-	2800 3100 2100 3100
-Text Label 2150 3200 0    60   ~ 0
-SWDIO_JTMS
+	2800 3200 2100 3200
 Text Label 2150 3100 0    60   ~ 0
-SWDIO_JTCK
+SWDIO_JTMS
+Text Label 2150 3200 0    60   ~ 0
+SWCLK_JTCK
 Text Label 5350 2150 0    60   ~ 0
 NRST
 Wire Wire Line
-	7300 4150 7300 4050
-Connection ~ 7300 4150
+	8100 4150 8100 4050
 Wire Wire Line
-	7300 4050 7850 4050
-Text Label 7350 4050 0    60   ~ 0
+	8100 4050 8650 4050
+Text Label 8150 4050 0    60   ~ 0
 JTDO
-Text Label 950  3200 0    60   ~ 0
-NRST
 Wire Wire Line
 	2200 2150 2800 2150
 Connection ~ 2800 2150
@@ -349,7 +341,6 @@ NoConn ~ 5850 4650
 NoConn ~ 5850 4750
 NoConn ~ 5850 5050
 NoConn ~ 7250 4850
-NoConn ~ 7250 4350
 NoConn ~ 7250 4050
 NoConn ~ 5850 5150
 NoConn ~ 5850 5250
@@ -673,17 +664,6 @@ JTDO
 Wire Wire Line
 	2800 3300 2100 3300
 $Comp
-L power:GND #PWR030
-U 1 1 5E3B7BFA
-P 1500 3600
-F 0 "#PWR030" H 1500 3350 50  0001 C CNN
-F 1 "GND" H 1500 3450 50  0000 C CNN
-F 2 "" H 1500 3600 50  0001 C CNN
-F 3 "" H 1500 3600 50  0001 C CNN
-	1    1500 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR029
 U 1 1 5E3BE166
 P 1500 3000
@@ -696,30 +676,16 @@ F 3 "" H 1500 3000 50  0001 C CNN
 $EndComp
 Text Label 2150 3400 0    60   ~ 0
 JTDI
-Text Label 2150 3500 0    60   ~ 0
-JTRST
 Wire Wire Line
 	2100 3400 2800 3400
-Wire Wire Line
-	2100 3500 2800 3500
 Wire Wire Line
 	1600 3100 1500 3100
 Wire Wire Line
 	1500 3100 1500 3000
 Wire Wire Line
-	1600 3500 1500 3500
-Wire Wire Line
-	1500 3500 1500 3600
-Wire Wire Line
-	1600 3200 900  3200
-Wire Wire Line
-	1600 3300 900  3300
-Wire Wire Line
-	1600 3400 900  3400
-Text Label 950  3300 0    60   ~ 0
+	1600 3500 900  3500
+Text Label 950  3500 0    60   ~ 0
 USART3_TX
-Text Label 950  3400 0    60   ~ 0
-USART3_RX
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J2
 U 1 1 5E20A57C
@@ -1047,10 +1013,6 @@ Wire Wire Line
 Wire Wire Line
 	7250 4450 8700 4450
 Wire Wire Line
-	7300 4250 8700 4250
-Wire Wire Line
-	7300 4150 8700 4150
-Wire Wire Line
 	8000 5250 8850 5250
 Wire Wire Line
 	7650 5150 8850 5150
@@ -1070,4 +1032,83 @@ Wire Wire Line
 	7250 3050 9050 3050
 Wire Wire Line
 	7250 2950 9050 2950
+Wire Wire Line
+	650  3200 650  3300
+$Comp
+L power:GND #PWR030
+U 1 1 5E3B7BFA
+P 650 3300
+F 0 "#PWR030" H 650 3050 50  0001 C CNN
+F 1 "GND" H 650 3150 50  0000 C CNN
+F 2 "" H 650 3300 50  0001 C CNN
+F 3 "" H 650 3300 50  0001 C CNN
+	1    650  3300
+	1    0    0    -1  
+$EndComp
+Text Label 950  3300 0    60   ~ 0
+USART3_RX
+Wire Wire Line
+	1600 3300 900  3300
+Wire Wire Line
+	900  3400 1600 3400
+Text Label 950  3400 0    60   ~ 0
+JTRST
+Text Label 2150 3500 0    60   ~ 0
+NRST
+Wire Wire Line
+	2800 3500 2100 3500
+Wire Wire Line
+	650  3200 1600 3200
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J3
+U 1 1 5E4CC11F
+P 1800 3950
+F 0 "J3" H 1850 4167 50  0000 C CNN
+F 1 "PAYLOAD" H 1850 4076 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x02_P1.27mm_Vertical" H 1800 3950 50  0001 C CNN
+F 3 "~" H 1800 3950 50  0001 C CNN
+	1    1800 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3950 2800 3950
+Wire Wire Line
+	2100 4050 2800 4050
+Wire Wire Line
+	1600 3950 900  3950
+Wire Wire Line
+	1600 4050 900  4050
+Wire Wire Line
+	7250 4350 7850 4350
+Text Label 7300 4350 0    60   ~ 0
+DEPLOY
+$Comp
+L power:GND #PWR0117
+U 1 1 5E523023
+P 900 4150
+F 0 "#PWR0117" H 900 3900 50  0001 C CNN
+F 1 "GND" H 900 4000 50  0000 C CNN
+F 2 "" H 900 4150 50  0001 C CNN
+F 3 "" H 900 4150 50  0001 C CNN
+	1    900  4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  4050 900  4150
+Text Label 1000 3950 0    60   ~ 0
+I2C1_SDA
+Text Label 2150 3950 0    60   ~ 0
+I2C1_SCL
+Text Label 2150 4050 0    60   ~ 0
+DEPLOY
+Connection ~ 8100 4250
+Wire Wire Line
+	8100 4250 8700 4250
+Wire Wire Line
+	7250 4250 8100 4250
+Connection ~ 8100 4150
+Wire Wire Line
+	8100 4150 8700 4150
+Wire Wire Line
+	7250 4150 8100 4150
 $EndSCHEMATC
